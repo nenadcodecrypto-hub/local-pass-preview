@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local Pass - Belgrade Perks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=landing-mobile-v2" />
+    <script src="./i18n.js?v=small-tablet-menu-v1" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Local Pass home">
+        <span>LP</span>
+        Local Pass
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#how">How it works</a>
+        <a href="#places">Places</a>
+        <a href="#pass">Pass</a>
+        <a href="#app">Get app</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="small-tablet-menu"
+        aria-label="Open menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <a class="header-cta" href="#places">View partners</a>
+    </header>
+    <nav
+      id="small-tablet-menu"
+      class="small-tablet-menu"
+      aria-label="Primary navigation"
+      aria-hidden="true"
+    >
+      <a href="#how">How it works</a>
+      <a href="#places">Places</a>
+      <a href="#pass">Pass</a>
+      <a href="#app">Get app</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-slides" aria-hidden="true">
+          <img
+            class="hero-slide"
+            src="./assets/hero/belgrade-pobednik-kalemegdan-panorama.jpg"
+            alt=""
+          />
+          <img
+            class="hero-slide"
+            src="./assets/hero/belgrade-saint-sava-panorama.jpg"
+            alt=""
+          />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Belgrade beta</p>
+          <h1>One pass for better local places.</h1>
+          <p class="hero-lede">
+            Unlock selected restaurants, stays, wellness and experiences across
+            Belgrade with a digital pass made for visitors.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#places">Explore perks</a>
+            <a class="secondary-button" href="#pass">See how it works</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section intro-grid">
+        <div>
+          <p class="eyebrow">Why it exists</p>
+          <h2>Skip the search. Go straight to places worth trying.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            Local Pass gives visitors a clear list of trusted Belgrade partners
+            and perks that are easy to understand before they arrive.
+          </p>
+          <ul>
+            <li>Curated local partners</li>
+            <li>Simple perk rules</li>
+            <li>Digital proof on location</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section steps" aria-label="How Local Pass works">
+        <article>
+          <span>01</span>
+          <h3>Browse</h3>
+          <p>Find one good place by category, area or type of perk.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Show pass</h3>
+          <p>Open your active digital pass before paying or checking in.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Use perk</h3>
+          <p>The partner confirms the pass and applies the agreed benefit.</p>
+        </article>
+      </section>
+
+      <section id="places" class="section places-section">
+        <div class="section-heading places-heading">
+          <div>
+            <p class="eyebrow">Example partners</p>
+            <h2>Discover selected local perks across Belgrade.</h2>
+          </div>
+          <a class="section-button" href="./partners.html">View all partners</a>
+        </div>
+        <div class="places-grid">
+          <a class="place-card" href="./partner-piatto-banjica.html">
+            <img
+              src="https://piattobanjica.rs/assets/images/banjica-40.jpg"
+              alt="Piatto Banjica restaurant interior"
+            />
+            <div>
+              <span>Restaurant</span>
+              <h3>Piatto Banjica</h3>
+              <p>15% off selected dining moments.</p>
+            </div>
+          </a>
+          <a class="place-card" href="./partner-h41-luxury-suites.html">
+            <img
+              src="https://h41.rs/wp-content/uploads/2022/11/galerija15-1180x710.jpg"
+              alt="H41 Luxury Suites hotel room"
+            />
+            <div>
+              <span>Hotel</span>
+              <h3>H41 Luxury Suites</h3>
+              <p>10% off selected stays.</p>
+            </div>
+          </a>
+          <a class="place-card" href="./partner-svet-sauna-banjica.html">
+            <img
+              src="http://www.svetsauna.rs/wp-content/uploads/2018/02/sauna.jpg"
+              alt="Svet Sauna Banjica sauna"
+            />
+            <div>
+              <span>Spa center</span>
+              <h3>Svet Sauna Banjica</h3>
+              <p>20% off selected spa visits.</p>
+            </div>
+          </a>
+          <a class="place-card" href="./partner-cruise-belgrade.html">
+            <img
+              src="https://www.cruisebelgrade.com/ws/media-library/5dcee7db0b454d108a52f8232a77071e/img_1926.jpeg"
+              alt="Cruise Belgrade boat tour"
+            />
+            <div>
+              <span>Experience</span>
+              <h3>Cruise Belgrade</h3>
+              <p>10% off selected cruise bookings.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="pass" class="section app-steps-section">
+        <div class="section-heading centered">
+          <p class="eyebrow">Simple start</p>
+          <h2>How Local Pass works.</h2>
+        </div>
+        <div class="app-steps" aria-label="How Local Pass works">
+          <article class="app-step">
+            <div class="step-device" aria-hidden="true">
+              <div class="device-top"></div>
+              <div class="mini-map">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mini-categories">
+                <i></i><i></i><i></i><i></i>
+              </div>
+              <div class="mini-offer"></div>
+            </div>
+            <h3>Step 1: Download the app.</h3>
+            <p>Browse selected Belgrade perks for free.</p>
+          </article>
+          <article class="app-step">
+            <div class="step-device" aria-hidden="true">
+              <div class="device-top"></div>
+              <div class="mini-plan">
+                <strong>Choose membership</strong>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <h3>Step 2: Choose membership.</h3>
+            <p>Activate your pass when you are ready to use perks.</p>
+          </article>
+          <article class="app-step">
+            <div class="step-device" aria-hidden="true">
+              <div class="device-top"></div>
+              <div class="mini-route">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="mini-place-card"></div>
+            </div>
+            <h3>Step 3: Browse offers.</h3>
+            <p>Find a partner and show your digital pass.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="app" class="section app-download-section">
+        <div class="app-download-copy">
+          <p class="eyebrow">Get Local Pass app</p>
+          <h2>Your Belgrade perks, ready when you arrive.</h2>
+          <p>
+            Browse trusted places, save the perks you like and keep your digital
+            pass ready for restaurants, stays, wellness and experiences.
+          </p>
+          <div class="store-buttons" aria-label="Download app links">
+            <a href="#" class="store-button" aria-label="Download on the App Store for iOS">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16.8 12.4c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.7.8-3.4.8s-1.8-.8-3-.8c-1.5 0-3 .9-3.8 2.2-1.6 2.8-.4 7 1.1 9.2.8 1.1 1.7 2.3 2.9 2.2 1.2-.1 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.2 1.2-2.4 1.2-2.5-.1 0-2.4-.9-2.4-3.6Z"></path>
+                <path d="M14.5 5.7c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1 1.6-.9 2.5 1 0 2-.5 2.6-1.1Z"></path>
+              </svg>
+              <span>
+                <small>Download on the</small>
+                App Store
+              </span>
+            </a>
+            <a href="#" class="store-button" aria-label="Get it on Google Play for Android">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5.2 3.4c-.3.2-.5.6-.5 1.1v15c0 .5.2.9.5 1.1l8.8-8.6-8.8-8.6Z"></path>
+                <path d="m15.2 10.8 2.4-2.4L7.2 2.6c-.4-.2-.8-.2-1.1-.1l9.1 8.3Z"></path>
+                <path d="m15.2 13.2-9.1 8.3c.3.1.7.1 1.1-.1l10.4-5.8-2.4-2.4Z"></path>
+                <path d="m18.6 9-2.3 2.3 2.3 2.3 1.3-.7c.9-.5.9-1.8 0-2.2L18.6 9Z"></path>
+              </svg>
+              <span>
+                <small>Get it on</small>
+                Google Play
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="app-showcase" aria-label="Local Pass app preview">
+          <div class="app-phone">
+            <div class="phone-notch"></div>
+            <div class="app-ui">
+              <div class="app-ui-top">
+                <span>Belgrade today</span>
+                <strong>LP</strong>
+              </div>
+              <h3>Perks near you</h3>
+              <div class="app-search">Search restaurants, spas, stays...</div>
+              <div class="app-chip-row">
+                <span>Food</span>
+                <span>Spa</span>
+                <span>Stays</span>
+              </div>
+              <article class="app-perk-card featured">
+                <img
+                  src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80"
+                  alt=""
+                />
+                <div>
+                  <small>Food & Drink</small>
+                  <strong>Ambar River Table</strong>
+                  <p>15% off before 18:00</p>
+                </div>
+              </article>
+              <article class="app-perk-card">
+                <div class="perk-icon"></div>
+                <div>
+                  <small>Wellness</small>
+                  <strong>Dorcol Sauna</strong>
+                  <p>2 for 1 private slot</p>
+                </div>
+              </article>
+              <div class="app-pass-bar">
+                <span>Active pass</span>
+                <strong>Show</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq-section">
+        <div class="section-heading">
+          <p class="eyebrow">Common questions</p>
+          <h2>Clear enough to decide quickly.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Who is Local Pass for?</summary>
+            <p>Tourists, digital nomads and locals who want trusted Belgrade places with useful perks.</p>
+          </details>
+          <details>
+            <summary>Do partners need a separate app?</summary>
+            <p>Not for the MVP. A simple validation page is enough to confirm an active pass.</p>
+          </details>
+          <details>
+            <summary>Are the perks vague discounts?</summary>
+            <p>No. Every perk should say where it works, when it works and what the user gets.</p>
+          </details>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home" aria-label="Local Pass home">
+        <span>LP</span>
+        Local Pass
+      </a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#how">How it works</a>
+        <a href="#places">Places</a>
+        <a href="#pass">Pass</a>
+        <a href="#app">Get app</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="social-block">
+        <span>Follow us</span>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="5"></rect>
+              <circle cx="12" cy="12" r="3.5"></circle>
+              <circle cx="16.8" cy="7.2" r="0.9"></circle>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.2 8.2h2.2V4.5h-2.8c-3.1 0-4.8 1.9-4.8 5v2.2H6v3.8h2.8V22h4.1v-6.5h3.1l0.5-3.8h-3.6V9.9c0-1.1.4-1.7 1.3-1.7Z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.5 3.5c.4 2.6 1.8 4.2 4.2 4.5v3.5c-1.6 0-3-.5-4.2-1.4v5.6c0 3.2-2.2 5.3-5.4 5.3-2.8 0-4.9-1.9-4.9-4.6 0-2.9 2.3-4.8 5.5-4.7.3 0 .6 0 .9.1v3.6c-.3-.1-.6-.1-.9-.1-1 0-1.7.5-1.7 1.4 0 .8.6 1.4 1.5 1.4 1 0 1.6-.7 1.6-1.9V3.5h3.4Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

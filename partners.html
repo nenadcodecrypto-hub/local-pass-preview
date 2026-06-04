@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local Pass - Partners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=partners-mobile-v2" />
+    <script src="./i18n.js?v=partners-tablet-polish-v1" defer></script>
+    <script src="./partners.js" defer></script>
+  </head>
+  <body class="partners-page">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Local Pass home">
+        <span>LP</span>
+        Local Pass
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="./index.html#how">How it works</a>
+        <a href="./partners.html" aria-current="page">Partners</a>
+        <a href="./index.html#pass">Pass</a>
+        <a href="./index.html#app">Get app</a>
+        <a href="./index.html#faq">FAQ</a>
+      </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="small-tablet-menu"
+        aria-label="Open menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <a class="header-cta" href="./partners.html">View partners</a>
+    </header>
+    <nav
+      id="small-tablet-menu"
+      class="small-tablet-menu"
+      aria-label="Primary navigation"
+      aria-hidden="true"
+    >
+      <a href="./index.html#how">How it works</a>
+      <a href="./partners.html" aria-current="page">Partners</a>
+      <a href="./index.html#pass">Pass</a>
+      <a href="./index.html#app">Get app</a>
+      <a href="./index.html#faq">FAQ</a>
+    </nav>
+
+    <main>
+      <section class="partners-hero">
+        <div class="partners-hero-copy">
+          <p class="eyebrow">Local Pass partners</p>
+          <h1>Partners</h1>
+          <p>
+            Find places where Local Pass gives you a clear perk: a restaurant,
+            hotel or spa center, with rules you can understand quickly.
+          </p>
+        </div>
+      </section>
+
+      <section class="partners-shell" aria-label="Partner search and filters">
+        <div class="catalog-toolbar">
+          <label class="search-field" for="partner-search">
+            <span>Search partners</span>
+            <input
+              id="partner-search"
+              type="search"
+              placeholder="Search by name, category, area or discount"
+              autocomplete="off"
+            />
+          </label>
+          <button class="filter-toggle" type="button" aria-expanded="false" aria-controls="filter-panel">
+            Filters
+          </button>
+        </div>
+
+        <div class="catalog-layout">
+          <aside class="filter-panel" id="filter-panel" aria-label="Partner filters">
+            <div class="filter-panel-header">
+              <div>
+                <p class="eyebrow">Refine</p>
+                <h2>Filters</h2>
+              </div>
+              <button class="filter-close" type="button" aria-label="Close filters">Close</button>
+            </div>
+
+            <fieldset>
+              <legend>Category</legend>
+              <label>
+                <input type="checkbox" name="category" value="restaurant" />
+                Restaurants
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="hotel" />
+                Hotels
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="spa" />
+                Spa centers
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="experience" />
+                Experiences
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Area</legend>
+              <label>
+                <input type="checkbox" name="area" value="kalemegdan" />
+                Kalemegdan
+              </label>
+              <label>
+                <input type="checkbox" name="area" value="banjica" />
+                Banjica
+              </label>
+              <label>
+                <input type="checkbox" name="area" value="tasmajdan" />
+                Tasmajdan
+              </label>
+              <label>
+                <input type="checkbox" name="area" value="savamala" />
+                Savamala
+              </label>
+              <label>
+                <input type="checkbox" name="area" value="stari-grad" />
+                Stari Grad
+              </label>
+              <label>
+                <input type="checkbox" name="area" value="dorcol" />
+                Dorcol
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Discounts</legend>
+              <label>
+                <input type="checkbox" name="discount" value="5" />
+                5%
+              </label>
+              <label>
+                <input type="checkbox" name="discount" value="10" />
+                10%
+              </label>
+              <label>
+                <input type="checkbox" name="discount" value="15" />
+                15%
+              </label>
+              <label>
+                <input type="checkbox" name="discount" value="20" />
+                20%
+              </label>
+            </fieldset>
+
+            <button class="clear-filters" type="button">Clear filters</button>
+          </aside>
+
+          <div class="catalog-results">
+            <div class="partner-category-list">
+              <section class="partner-category" aria-labelledby="restaurants-heading">
+                <div class="partner-category-heading">
+                  <p class="eyebrow">Food & drink</p>
+                  <h2 id="restaurants-heading">Restaurants</h2>
+                </div>
+                <div class="partner-results-grid">
+                  <a
+                    class="place-card partner-result-card"
+                    href="./partner-piatto-banjica.html"
+                    data-category="restaurant"
+                    data-area="banjica"
+                    data-discount="15"
+                    data-search="piatto banjica restaurant restoran italian italijanska pizza pasta crnotravska vozdovac banjica 15% discount popust"
+                  >
+                    <img
+                      src="https://piattobanjica.rs/assets/images/banjica-40.jpg"
+                      alt="Piatto Banjica restaurant interior"
+                    />
+                    <div>
+                      <span>Restaurant</span>
+                      <h3>Piatto Banjica</h3>
+                      <p>Warm Italian cooking on Banjica, from wood-fired pizza to relaxed dinners over wine.</p>
+                    </div>
+                  </a>
+                </div>
+              </section>
+
+              <section class="partner-category" aria-labelledby="hotels-heading">
+                <div class="partner-category-heading">
+                  <p class="eyebrow">Stays</p>
+                  <h2 id="hotels-heading">Hotels</h2>
+                </div>
+                <div class="partner-results-grid">
+                  <a
+                    class="place-card partner-result-card"
+                    href="./partner-h41-luxury-suites.html"
+                    data-category="hotel"
+                    data-area="tasmajdan"
+                    data-discount="10"
+                    data-search="h41 luxury suites hotel smestaj boravak tasmajdan belgrade beograd suites apartmani lobby bar 10% discount popust"
+                  >
+                    <img
+                      src="https://h41.rs/wp-content/uploads/2022/11/galerija15-1180x710.jpg"
+                      alt="H41 Luxury Suites hotel room"
+                    />
+                    <div>
+                      <span>Hotel</span>
+                      <h3>H41 Luxury Suites</h3>
+                      <p>Elegant city suites near Tasmajdan Park, made for quiet stays close to central Belgrade.</p>
+                    </div>
+                  </a>
+                </div>
+              </section>
+
+              <section class="partner-category" aria-labelledby="spa-heading">
+                <div class="partner-category-heading">
+                  <p class="eyebrow">Wellness</p>
+                  <h2 id="spa-heading">Spa centers</h2>
+                </div>
+                <div class="partner-results-grid">
+                  <a
+                    class="place-card partner-result-card"
+                    href="./partner-svet-sauna-banjica.html"
+                    data-category="spa"
+                    data-area="banjica"
+                    data-discount="20"
+                    data-search="svet sauna banjica spa wellness crnotravska sauna jacuzzi djakuzi pool bazen massage masaza 20% discount popust"
+                  >
+                    <img
+                      src="http://www.svetsauna.rs/wp-content/uploads/2018/02/sauna.jpg"
+                      alt="Svet Sauna Banjica sauna"
+                    />
+                    <div>
+                      <span>Spa center</span>
+                      <h3>Svet Sauna Banjica</h3>
+                      <p>A spacious sauna and pool retreat on Banjica for heat, cold plunge and full-body reset.</p>
+                    </div>
+                  </a>
+                </div>
+              </section>
+
+              <section class="partner-category" aria-labelledby="experiences-heading">
+                <div class="partner-category-heading">
+                  <p class="eyebrow">Tours & activities</p>
+                  <h2 id="experiences-heading">Experiences</h2>
+                </div>
+                <div class="partner-results-grid">
+                  <a
+                    class="place-card partner-result-card"
+                    href="./partner-cruise-belgrade.html"
+                    data-category="experience"
+                    data-area="kalemegdan"
+                    data-discount="10"
+                    data-search="cruise belgrade krstarenje beograd experience dozivljaj boat brod tour tura sava danube dunav kalemegdan sunset zalazak daytime dnevno 10% discount popust"
+                  >
+                    <img
+                      src="https://www.cruisebelgrade.com/ws/media-library/5dcee7db0b454d108a52f8232a77071e/img_1926.jpeg"
+                      alt="Cruise Belgrade boat tour"
+                    />
+                    <div>
+                      <span>Experience</span>
+                      <h3>Cruise Belgrade</h3>
+                      <p>A river cruise across the Sava and Danube with city views, music and a relaxed local route.</p>
+                    </div>
+                  </a>
+                </div>
+              </section>
+            </div>
+
+            <div class="empty-results" hidden>
+              <h2>No partners found.</h2>
+              <p>Try a different search term or clear one of the selected filters.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="./index.html#home" aria-label="Local Pass home">
+        <span>LP</span>
+        Local Pass
+      </a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="./index.html#how">How it works</a>
+        <a href="./partners.html">Partners</a>
+        <a href="./index.html#pass">Pass</a>
+        <a href="./index.html#app">Get app</a>
+        <a href="./index.html#faq">FAQ</a>
+      </nav>
+      <div class="social-block">
+        <span>Follow us</span>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="5"></rect>
+              <circle cx="12" cy="12" r="3.5"></circle>
+              <circle cx="16.8" cy="7.2" r="0.9"></circle>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.2 8.2h2.2V4.5h-2.8c-3.1 0-4.8 1.9-4.8 5v2.2H6v3.8h2.8V22h4.1v-6.5h3.1l0.5-3.8h-3.6V9.9c0-1.1.4-1.7 1.3-1.7Z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.5 3.5c.4 2.6 1.8 4.2 4.2 4.5v3.5c-1.6 0-3-.5-4.2-1.4v5.6c0 3.2-2.2 5.3-5.4 5.3-2.8 0-4.9-1.9-4.9-4.6 0-2.9 2.3-4.8 5.5-4.7.3 0 .6 0 .9.1v3.6c-.3-.1-.6-.1-.9-.1-1 0-1.7.5-1.7 1.4 0 .8.6 1.4 1.5 1.4 1 0 1.6-.7 1.6-1.9V3.5h3.4Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="filter-backdrop" hidden></div>
+  </body>
+</html>
