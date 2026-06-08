@@ -91,6 +91,7 @@ const translations = {
     "Area": "Deo grada",
     "Discounts": "Popusti",
     "Clear filters": "Očisti filtere",
+    "All": "Sve",
     "Warm Italian cooking on Banjica, from wood-fired pizza to relaxed dinners over wine.": "Topla italijanska kuhinja na Banjici, od pizza iz peći na drva do opuštenih večera uz vino.",
     "Elegant city suites near Tasmajdan Park, made for quiet stays close to central Belgrade.": "Elegantni gradski apartmani blizu Tašmajdanskog parka, za miran boravak nadomak centra Beograda.",
     "A spacious sauna and pool retreat on Banjica for heat, cold plunge and full-body reset.": "Prostran sauna i bazenski kutak na Banjici za toplotu, hladnu vodu i potpuni reset.",
@@ -347,6 +348,19 @@ const setupSmallTabletMenu = () => {
 
   toggle.addEventListener("click", () => {
     setOpen(!document.body.classList.contains("menu-open"));
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!document.body.classList.contains("menu-open")) {
+      return;
+    }
+
+    const target = event.target;
+    if (toggle.contains(target) || menu.contains(target)) {
+      return;
+    }
+
+    setOpen(false);
   });
 
   menu.addEventListener("click", (event) => {

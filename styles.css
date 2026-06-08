@@ -973,6 +973,137 @@ h2 {
   padding: 7px 10px;
 }
 
+.partner-app-ui {
+  background:
+    radial-gradient(circle at 82% 6%, rgba(255, 43, 94, 0.18), transparent 26%),
+    linear-gradient(180deg, #f9f5ff 0%, #eef5ff 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 50px 13px 13px;
+}
+
+.partner-app-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner-app-header span,
+.partner-app-search span,
+.partner-app-card small {
+  color: var(--purple-700);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.partner-app-header strong {
+  align-items: center;
+  background: linear-gradient(135deg, var(--purple-500), var(--pink));
+  border-radius: 999px;
+  color: white;
+  display: inline-flex;
+  font-size: 0.76rem;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+
+.partner-app-search {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(103, 58, 183, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 12px 24px rgba(24, 18, 70, 0.08);
+  padding: 11px 12px;
+}
+
+.partner-app-search p {
+  color: rgba(23, 16, 55, 0.58);
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-top: 3px;
+}
+
+.partner-app-actions {
+  display: flex;
+  gap: 6px;
+  overflow: hidden;
+}
+
+.partner-app-actions span {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(103, 58, 183, 0.14);
+  border-radius: 999px;
+  color: var(--plum-950);
+  flex: 0 0 auto;
+  font-size: 0.61rem;
+  font-weight: 900;
+  padding: 7px 9px;
+}
+
+.partner-app-actions span:first-child {
+  background: linear-gradient(135deg, var(--pink), var(--purple-500));
+  border-color: transparent;
+  color: white;
+}
+
+.partner-app-results {
+  display: grid;
+  gap: 8px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.partner-app-card {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(103, 58, 183, 0.14);
+  border-radius: 18px;
+  box-shadow: 0 12px 26px rgba(24, 18, 70, 0.08);
+  display: grid;
+  gap: 9px;
+  grid-template-columns: 52px minmax(0, 1fr);
+  min-width: 0;
+  padding: 8px;
+}
+
+.partner-app-card.featured {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(184, 74, 255, 0.34);
+}
+
+.partner-app-card img {
+  aspect-ratio: 1;
+  border-radius: 14px;
+  height: 52px;
+  object-fit: cover;
+  width: 52px;
+}
+
+.partner-app-card div {
+  min-width: 0;
+}
+
+.partner-app-card h3 {
+  color: var(--plum-950);
+  font-family: var(--body);
+  font-size: 0.82rem;
+  font-weight: 900;
+  line-height: 1.08;
+  margin-top: 2px;
+}
+
+.partner-app-card p {
+  color: rgba(23, 16, 55, 0.62);
+  font-size: 0.64rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 3px;
+}
+
 .faq-section {
   display: grid;
   gap: 32px;
@@ -1122,6 +1253,33 @@ h2 {
   gap: 14px;
   grid-template-columns: minmax(0, 1fr) auto;
   margin-bottom: 24px;
+}
+
+.quick-category-filters {
+  display: none;
+}
+
+.quick-category-filters button {
+  border: 1px solid rgba(103, 58, 183, 0.16);
+  border-radius: 999px;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font: 900 0.86rem var(--body);
+  min-height: 42px;
+  padding: 0 15px;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.quick-category-filters button[aria-pressed="true"] {
+  background: linear-gradient(135deg, var(--pink), var(--purple-500));
+  border-color: transparent;
+  color: white;
+}
+
+.quick-category-filters button:hover,
+.quick-category-filters button:focus-visible {
+  border-color: rgba(103, 58, 183, 0.4);
+  transform: translateY(-1px);
 }
 
 .search-field {
@@ -1771,6 +1929,21 @@ input:focus-visible {
   .filter-toggle {
     display: inline-flex;
   }
+
+  .quick-category-filters {
+    display: flex;
+    gap: 8px;
+    margin: 0 0 26px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding: 2px 0 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .quick-category-filters::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media (min-width: 701px) and (max-width: 980px) {
@@ -2061,6 +2234,10 @@ input:focus-visible {
 
   .social-block > span {
     display: none;
+  }
+
+  .social-links {
+    gap: 16px;
   }
 
   .site-footer {
@@ -2489,6 +2666,10 @@ input:focus-visible {
 
   .social-block > span {
     display: none;
+  }
+
+  .social-links {
+    gap: 16px;
   }
 
   .partners-hero {
@@ -2991,7 +3172,7 @@ input:focus-visible {
     align-items: stretch;
     gap: 18px;
     grid-template-columns: 1fr;
-    margin-bottom: 34px;
+    margin-bottom: 22px;
   }
 
   .search-field {
@@ -3008,6 +3189,75 @@ input:focus-visible {
 
   .partner-results-grid {
     grid-template-columns: 1fr;
+  }
+
+  .quick-category-filters {
+    margin-bottom: 24px;
+  }
+
+  .quick-category-filters button {
+    font-size: 0.82rem;
+    min-height: 40px;
+    padding: 0 14px;
+  }
+
+  .partners-page .partner-category-list {
+    gap: 18px;
+  }
+
+  .partners-page .partner-category {
+    gap: 11px;
+  }
+
+  .partners-page .partner-category-heading {
+    padding-bottom: 10px;
+  }
+
+  .partners-page .partner-category-heading .eyebrow {
+    margin-bottom: 4px;
+  }
+
+  .partners-page .partner-category-heading h2 {
+    font-size: clamp(1.85rem, 11vw, 2.45rem);
+  }
+
+  .partners-page .partner-result-card {
+    align-items: center;
+    border-radius: 16px;
+    display: grid;
+    gap: 11px;
+    grid-template-columns: 88px minmax(0, 1fr);
+    min-height: 104px;
+    padding: 8px;
+  }
+
+  .partners-page .partner-result-card img {
+    aspect-ratio: 1;
+    border-radius: 12px;
+    height: 88px;
+    object-fit: cover;
+    width: 88px;
+  }
+
+  .partners-page .partner-result-card div {
+    min-width: 0;
+    padding: 0 4px 0 0;
+  }
+
+  .partners-page .partner-result-card span {
+    font-size: 0.64rem;
+  }
+
+  .partners-page .partner-result-card h3 {
+    font-size: 0.96rem;
+    line-height: 1.08;
+    margin-top: 5px;
+  }
+
+  .partners-page .partner-result-card p {
+    font-size: 0.78rem;
+    line-height: 1.34;
+    margin-top: 5px;
   }
 
   .partner-detail-hero {
@@ -3189,5 +3439,125 @@ input:focus-visible {
 
   .social-block > span {
     display: none;
+  }
+
+  .social-links {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 980px) {
+  .partner-app-ui {
+    gap: 8px;
+    padding: 42px 11px 11px;
+  }
+
+  .partner-app-header span,
+  .partner-app-search span,
+  .partner-app-card small {
+    font-size: 0.54rem;
+  }
+
+  .partner-app-header strong {
+    font-size: 0.68rem;
+    height: 28px;
+    width: 28px;
+  }
+
+  .partner-app-search {
+    border-radius: 15px;
+    padding: 9px 10px;
+  }
+
+  .partner-app-search p {
+    font-size: 0.58rem;
+  }
+
+  .partner-app-actions {
+    gap: 5px;
+  }
+
+  .partner-app-actions span {
+    font-size: 0.54rem;
+    padding: 6px 8px;
+  }
+
+  .partner-app-results {
+    gap: 6px;
+  }
+
+  .partner-app-card {
+    border-radius: 15px;
+    gap: 7px;
+    grid-template-columns: 44px minmax(0, 1fr);
+    padding: 6px;
+  }
+
+  .partner-app-card img {
+    border-radius: 11px;
+    height: 44px;
+    width: 44px;
+  }
+
+  .partner-app-card h3 {
+    font-size: 0.7rem;
+  }
+
+  .partner-app-card p {
+    font-size: 0.55rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .partner-app-ui {
+    gap: 6px;
+    padding: 34px 9px 9px;
+  }
+
+  .partner-app-header span,
+  .partner-app-search span,
+  .partner-app-card small {
+    font-size: 0.48rem;
+  }
+
+  .partner-app-header strong {
+    font-size: 0.62rem;
+    height: 24px;
+    width: 24px;
+  }
+
+  .partner-app-search {
+    border-radius: 13px;
+    padding: 7px 8px;
+  }
+
+  .partner-app-search p {
+    font-size: 0.51rem;
+  }
+
+  .partner-app-actions span {
+    font-size: 0.48rem;
+    padding: 5px 7px;
+  }
+
+  .partner-app-card {
+    border-radius: 13px;
+    gap: 6px;
+    grid-template-columns: 38px minmax(0, 1fr);
+    padding: 5px;
+  }
+
+  .partner-app-card img {
+    border-radius: 10px;
+    height: 38px;
+    width: 38px;
+  }
+
+  .partner-app-card h3 {
+    font-size: 0.62rem;
+  }
+
+  .partner-app-card p {
+    font-size: 0.48rem;
   }
 }

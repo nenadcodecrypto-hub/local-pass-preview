@@ -10,9 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=partners-mobile-v2" />
-    <script src="./i18n.js?v=partners-tablet-polish-v1" defer></script>
-    <script src="./partners.js" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=partner-quick-filters-spacing-v1" />
+    <script src="./i18n.js?v=partner-quick-filters-v2" defer></script>
+    <script src="./partners.js?v=partner-quick-filters-v2" defer></script>
   </head>
   <body class="partners-page">
     <header class="site-header">
@@ -78,6 +78,14 @@
           <button class="filter-toggle" type="button" aria-expanded="false" aria-controls="filter-panel">
             Filters
           </button>
+        </div>
+
+        <div class="quick-category-filters" aria-label="Quick category filters">
+          <button type="button" data-category-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-category-filter="restaurant" aria-pressed="false">Restaurants</button>
+          <button type="button" data-category-filter="hotel" aria-pressed="false">Hotels</button>
+          <button type="button" data-category-filter="spa" aria-pressed="false">Spa centers</button>
+          <button type="button" data-category-filter="experience" aria-pressed="false">Experiences</button>
         </div>
 
         <div class="catalog-layout">
